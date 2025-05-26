@@ -1,0 +1,24 @@
+GET http://127.0.0.1:8000/get-csrf-token
+Accept: application/json
+###
+DELETE http://127.0.0.1:8000/games/3
+Content-Type: application/json
+X-CSRF-TOKEN: 1ZuXbzk7CSxHr02GJiLfwIhXPH18ZOOZSLra3bM2
+###
+GET http://127.0.0.1:8000/
+Content-Type: application/json
+###
+GET http://127.0.0.1:8000/games/1
+Content-Type: application/json
+###
+GET http://127.0.0.1:8000/games/2
+Content-Type: application/json
+###
+GET http://127.0.0.1:8000/games/3
+Content-Type: application/json
+###
+GET http://127.0.0.1:8000/games/4
+Content-Type: application/json
+###
+GET http://127.0.0.1:8000/games/5
+Content-Type: application/json
